@@ -29,6 +29,6 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 sot = input("Please enter a string of text (the bigger the better): ")
 print("You entered " + '"' + sot + '"' + ". Now jumble it:")
 countofsot = len(sot)
-ran = range(countofsot, 0)
+ran = list(range(0,countofsot))
 mapped = zip(ran, sot)
-print(list(mapped).sort())
+print(list(mapped))
