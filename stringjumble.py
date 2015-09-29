@@ -1,7 +1,7 @@
 """
 stringjumble.py
-Author: Eric
-Credit: Me!
+Author: Morgan Meliment
+Credit: http://stackoverflow.com/questions/3940128/how-can-i-reverse-a-list-in-python, http://stackoverflow.com/questions/17381951/split-sentence-into-words-separated-by-space
 
 Assignment:
 
@@ -28,7 +28,7 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 
 sot = input("Please enter a string of text (the bigger the better): ")
 print("You entered " + '"' + sot + '"' + ". Now jumble it:")
-countofsot = len(sot)
-ran = list(range(0,countofsot))
-mapped = zip(ran, sot)
-print(list(mapped))
+print(sot[::-1])
+g = sot.split()
+print("".join(x + " " for x in g[::-1]))
+print("".join(x[::-1] + " " for x in g))
